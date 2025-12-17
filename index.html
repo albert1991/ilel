@@ -1,108 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1220" />
   <title>Integrated Logistics and Energy Lab (ILEL)</title>
+  <meta name="description" content="Integrated Logistics and Energy Lab (ILEL) — Optimization, AI, and decision-making at the logistics–energy interface." />
+
+  <!-- (Optional) Favicons: add these files later if you want -->
+  <!-- <link rel="icon" href="favicon.svg" type="image/svg+xml"> -->
+  <!-- <link rel="icon" href="favicon.png" sizes="32x32" type="image/png"> -->
+  <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180"> -->
+
+  <!-- Social preview (optional if you later add og-image.png) -->
+  <meta property="og:title" content="Integrated Logistics and Energy Lab (ILEL)" />
+  <meta property="og:description" content="Optimization, AI, and decision-making at the logistics–energy interface." />
+  <meta property="og:type" content="website" />
+  <!-- <meta property="og:image" content="og-image.png" /> -->
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Integrated Logistics and Energy Lab</h1>
-    <p class="subtitle">Optimization, AI, and decision-making at the logistics–energy interface</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#people">People</a>
-      <a href="#affiliations">Affiliations</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="mark" aria-label="ILEL mark">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="7" cy="17" r="2.25" fill="currentColor" opacity="0.95"/>
+            <circle cx="17" cy="7" r="2.25" fill="currentColor" opacity="0.95"/>
+            <path d="M8.7 15.3 L15.3 8.7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/>
+            <path d="M6 7 C8.5 5.2 11 5.2 13 6.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity="0.55"/>
+            <path d="M11 18 C13.3 19.2 15.8 19.0 18 17.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity="0.55"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-title">Integrated Logistics and Energy Lab</div>
+          <div class="brand-sub">Optimization, AI, and decision-making at the logistics–energy interface</div>
+        </div>
+      </div>
 
-  <section id="about">
-    <h2>About the Lab</h2>
-    <p>
-      The <strong>Integrated Logistics and Energy Lab (ILEL)</strong> develops advanced optimization
-      and artificial intelligence methods for logistics systems operating under energy,
-      sustainability, and infrastructure constraints. Our research integrates transport,
-      energy systems, and uncertainty-aware decision-making, with a strong focus on real-world
-      logistics applications.
-    </p>
-  </section>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#people">People</a>
+        <a href="#affiliations">Affiliations</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </div>
 
-  <section id="research">
-    <h2>Research Lines</h2>
+  <main class="wrap">
+    <section class="hero" aria-label="Intro">
+      <h1>Integrated Logistics and Energy Lab (ILEL)</h1>
+      <p class="tagline">
+        The Integrated Logistics and Energy Lab (ILEL) develops advanced optimization and artificial intelligence
+        methods for logistics systems operating under energy, sustainability, and infrastructure constraints.
+        Our research integrates transport, energy systems, and uncertainty-aware decision-making, with a strong
+        focus on real-world logistics applications.
+      </p>
 
-    <h3>Energy-Responsive Logistics Systems</h3>
-    <ul>
-      <li>Battery-electric truck routing under grid congestion</li>
-      <li>Charging infrastructure planning and control</li>
-      <li>Integrated logistics–energy planning</li>
-      <li>Hydrogen transport and distribution networks</li>
-    </ul>
+      <div class="chips" aria-label="Key themes">
+        <div class="chip">Optimization</div>
+        <div class="chip">Stochastic Decision-Making</div>
+        <div class="chip">Electric &amp; Hydrogen Transport</div>
+        <div class="chip">Infrastructure Constraints</div>
+      </div>
+    </section>
 
-    <h3>Sustainable Transport Management</h3>
-    <ul>
-      <li>Electric and hydrogen vehicle routing</li>
-      <li>Reducing empty mileage and improving asset utilization</li>
-      <li>Robust and stochastic transport planning</li>
-      <li>Real-time transport control</li>
-    </ul>
+    <section id="about" class="section anchor">
+      <h2>About the Lab</h2>
+      <div class="grid">
+        <div class="card">
+          <p>
+            ILEL sits at the logistics–energy interface: designing methods and decision support that
+            account for grid congestion, charging infrastructure, sustainability targets, and uncertainty.
+            We combine rigorous operations research with machine learning to enable scalable, deployable tools
+            for transport planning and control.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <h3>Stochastic Optimization & AI</h3>
-    <ul>
-      <li>Markov Decision Processes and reinforcement learning</li>
-      <li>Stochastic and multi-stage optimization</li>
-      <li>Predict-then-optimize and recourse models</li>
-      <li>Hybrid OR–ML heuristics</li>
-    </ul>
-  </section>
+    <section id="research" class="section anchor">
+      <h2>Research Lines</h2>
 
-  <section id="people">
-    <h2>People</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Energy-Responsive Logistics Systems</h3>
+          <ul>
+            <li>Battery-electric truck routing under grid congestion</li>
+            <li>Charging infrastructure planning and control</li>
+            <li>Integrated logistics–energy planning</li>
+            <li>Hydrogen transport and distribution networks</li>
+          </ul>
+        </div>
 
-    <h3>Director</h3>
-    <p>
-      <strong>Dr. Albert H. Schrotenboer</strong><br />
-      Associate Professor of Integrated Logistics and Energy Systems<br />
-      Eindhoven University of Technology (TU/e)
-    </p>
+        <div class="card">
+          <h3>Sustainable Transport Management</h3>
+          <ul>
+            <li>Electric and hydrogen vehicle routing</li>
+            <li>Reducing empty mileage and improving asset utilization</li>
+            <li>Robust and stochastic transport planning</li>
+            <li>Real-time transport control</li>
+          </ul>
+        </div>
 
-    <h3>PhD Researchers</h3>
-    <ul>
-      <li>Gerben Ouwersloot</li>
-      <li>Ling Li</li>
-      <li>Casper Bazelmans</li>
-      <li>Neslihan Cevik</li>
-      <li>Miguel Chastre</li>
-    </ul>
+        <div class="card">
+          <h3>Stochastic Optimization &amp; AI</h3>
+          <ul>
+            <li>Markov Decision Processes and reinforcement learning</li>
+            <li>Stochastic and multi-stage optimization</li>
+            <li>Predict-then-optimize and recourse models</li>
+            <li>Hybrid OR–ML heuristics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <h3>Postdoctoral Researcher</h3>
-    <ul>
-      <li>Golman Rahmanafiar</li>
-    </ul>
-  </section>
+    <section id="people" class="section anchor">
+      <h2>People</h2>
 
-  <section id="affiliations">
-    <h2>Affiliations & Ecosystem</h2>
-    <ul>
-      <li>OPAC Group, IE&IS, Eindhoven University of Technology</li>
-      <li>Eindhoven Artificial Intelligence Systems Institute (EAISI)</li>
-      <li>Eindhoven Institute for Renewable Energy Systems (EIRES)</li>
-      <li>European Supply Chain Forum (ESCF)</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      Eindhoven University of Technology (TU/e)<br />
-      Department of Industrial Engineering & Innovation Sciences
-    </p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Integrated Logistics and Energy Lab</p>
-  </footer>
-</body>
-</html>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Director</h3>
+          <p><strong>Dr. Albert H. Schrotenboer</strong></p>
+          <p class="small">Associate Professor of Integrated Logistics and Energy Systems</p>
+          <p class="small">Eindhoven
