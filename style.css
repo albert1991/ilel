@@ -229,3 +229,34 @@ footer{
   flex-wrap:wrap;
   justify-content:space-between;
 }
+
+/* Publications */
+.pubs{ margin-top: 14px; display:grid; gap: 14px; }
+.pub{ padding: 16px 16px; }
+.pub-title{ margin: 0 0 6px; font-size: 15px; letter-spacing: -0.2px; }
+.pub-title a{ text-decoration: none; }
+.pub-title a:hover{ text-decoration: underline; text-underline-offset: 3px; }
+.pub-meta{ color: var(--faint); font-size: 13px; margin-bottom: 10px; }
+
+.pub-tags{ display:flex; flex-wrap:wrap; gap: 8px; margin-bottom: 10px; }
+.pill{
+  display:inline-flex;
+  align-items:center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
+.pub-abstract{
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.mini-list{ margin-top: 8px; display:grid; gap: 10px; }
+.mini-item{ display:flex; flex-direction:column; gap: 2px; }
+
