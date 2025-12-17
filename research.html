@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0b1220" />
   <title>Research — Integrated Logistics and Energy Lab (ILEL)</title>
-  <meta name="description" content="Research lines, publications, and associated faculty — Integrated Logistics and Energy Lab (ILEL)." />
+  <meta name="description" content="Research lines, selected publications, and associated faculty — Integrated Logistics and Energy Lab (ILEL)." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -42,14 +43,14 @@
     <section class="hero">
       <h1>Research</h1>
       <p class="tagline">
-        Our work combines operations research and AI to support decision-making for logistics systems constrained by
-        energy infrastructure, sustainability targets, and uncertainty.
+        We develop optimization and AI methods for logistics systems operating under energy, sustainability,
+        and infrastructure constraints — with an emphasis on deployable decision support.
       </p>
       <div class="chips" aria-label="Key themes">
         <div class="chip">Stochastic optimization</div>
-        <div class="chip">MDPs & RL</div>
-        <div class="chip">Electric & hydrogen freight</div>
-        <div class="chip">Grid/charging constraints</div>
+        <div class="chip">MDPs &amp; RL</div>
+        <div class="chip">Electric &amp; hydrogen freight</div>
+        <div class="chip">Grid &amp; charging constraints</div>
       </div>
     </section>
 
@@ -57,7 +58,7 @@
       <h2>Research lines</h2>
       <div class="grid cols-3">
         <div class="card">
-          <h3>Energy-responsive logistics</h3>
+          <h3>Energy-responsive logistics systems</h3>
           <ul>
             <li>Battery-electric truck routing under grid congestion</li>
             <li>Charging infrastructure planning and control</li>
@@ -70,16 +71,16 @@
           <h3>Sustainable transport management</h3>
           <ul>
             <li>Electric and hydrogen vehicle routing</li>
-            <li>Reducing empty mileage & improving utilization</li>
+            <li>Reducing empty mileage &amp; improving utilization</li>
             <li>Robust and stochastic transport planning</li>
             <li>Real-time transport control</li>
           </ul>
         </div>
 
         <div class="card">
-          <h3>Stochastic optimization & AI</h3>
+          <h3>Stochastic optimization &amp; AI</h3>
           <ul>
-            <li>Markov Decision Processes and reinforcement learning</li>
+            <li>Markov decision processes &amp; reinforcement learning</li>
             <li>Stochastic and multi-stage optimization</li>
             <li>Predict-then-optimize and recourse models</li>
             <li>Hybrid OR–ML heuristics</li>
@@ -89,23 +90,126 @@
     </section>
 
     <section class="section" id="publications">
-      <h2>Selected publications (with abstracts)</h2>
+      <h2>Selected publications</h2>
       <p class="small">
-        Seeded from TU/e Research Portal pages (abstract text shown when available). We can expand this to your full list once you pick a source of truth (TU/e portal export, BibTeX, or a curated list).
+        Below is a short, readable selection. If you want your full list with abstracts, the cleanest route is:
+        export BibTeX from Google Scholar or TU/e portal and I’ll generate the full page automatically.
       </p>
 
       <div class="pubs">
         <article class="pub card">
-          <div class="pub-head">
-            <h3 class="pub-title">
-              <a href="https://research.tue.nl/en/publications/a-green-hydrogen-energy-system-optimal-control-strategies-for-int" target="_blank" rel="noopener">
-                A Green Hydrogen Energy System — Optimal control strategies for integrated hydrogen storage and power generation with wind energy
-              </a>
-            </h3>
-            <div class="pub-meta">Renewable and Sustainable Energy Reviews (2022)</div>
-            <div class="pub-tags">
-              <span class="pill">MDP</span><span class="pill">Hydrogen</span><span class="pill">Wind</span>
-            </div>
+          <div class="pub-meta">Renewable and Sustainable Energy Reviews (2022)</div>
+          <h3 class="pub-title">
+            <a href="https://research.tue.nl/en/publications/a-green-hydrogen-energy-system-optimal-control-strategies-for-int" target="_blank" rel="noopener">
+              A Green Hydrogen Energy System — Optimal control strategies for integrated hydrogen storage and power generation with wind energy
+            </a>
+          </h3>
+          <div class="pub-tags">
+            <span class="pill">MDP</span>
+            <span class="pill">Hydrogen</span>
+            <span class="pill">Wind</span>
           </div>
           <p class="pub-abstract">
-            The intermittent nature of renewabl
+            Optimal operating policies for an integrated wind-to-hydrogen system, using Markov decision process modeling to
+            manage uncertainty in renewable production and storage decisions.
+          </p>
+        </article>
+
+        <article class="pub card">
+          <div class="pub-meta">Transportation Research Part E (2023)</div>
+          <h3 class="pub-title">
+            <a href="https://research.tue.nl/en/publications/reliable-reserve-crew-scheduling-for-airlines" target="_blank" rel="noopener">
+              Reliable Reserve-Crew Scheduling for Airlines
+            </a>
+          </h3>
+          <div class="pub-tags">
+            <span class="pill">Robustness</span>
+            <span class="pill">Scheduling</span>
+            <span class="pill">Disruptions</span>
+          </div>
+          <p class="pub-abstract">
+            A disruption-aware framework for reserve-crew planning that preserves operational flexibility and reduces
+            downstream disruption costs through robust repair and scheduling strategies.
+          </p>
+        </article>
+
+        <article class="pub card">
+          <div class="pub-meta">Journal of Supply Chain Management Science (2023)</div>
+          <h3 class="pub-title">
+            <a href="https://research.tue.nl/en/publications/a-share-first-plan-second-policy-for-collaboration-in-transportat" target="_blank" rel="noopener">
+              A share-first-plan-second policy for efficient cooperation in a multi-modal transportation corridor
+            </a>
+          </h3>
+          <div class="pub-tags">
+            <span class="pill">Collaboration</span>
+            <span class="pill">Multimodal</span>
+            <span class="pill">Policy</span>
+          </div>
+          <p class="pub-abstract">
+            A practical collaboration protocol that achieves most of the benefits of joint planning while remaining
+            implementable when full information sharing or centralized planning is infeasible.
+          </p>
+        </article>
+
+        <article class="pub card">
+          <div class="pub-meta">Working paper / portal listing</div>
+          <h3 class="pub-title">
+            <a href="https://research.tue.nl/en/publications/optimal-fulfillment-and-replenishment-for-omnichannel-retailers-w" target="_blank" rel="noopener">
+              Optimal Fulfillment and Replenishment for Omnichannel Retailers with Standard Shipping Contracts
+            </a>
+          </h3>
+          <div class="pub-tags">
+            <span class="pill">MDP</span>
+            <span class="pill">Inventory</span>
+            <span class="pill">Omnichannel</span>
+          </div>
+          <p class="pub-abstract">
+            Joint fulfillment and replenishment decision-making under realistic shipping contracts, modeled as a sequential
+            decision problem to control cost and service trade-offs.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="faculty">
+      <h2>Associated faculty</h2>
+      <p class="small">
+        Faculty members co-supervising ILEL PhD projects.
+      </p>
+
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Co-supervisors</h3>
+          <ul>
+            <li><strong>Prof. Tom van Woensel</strong> (TU/e)</li>
+            <li><strong>Dr. Layla Martin</strong> (TU/e)</li>
+            <li><strong>Dr. Willem van Jaarsveld</strong> (TU/e)</li>
+            <li><strong>Dr. Zumbul Atan</strong> (TU/e)</li>
+            <li><strong>Dr. Christina Imdahl</strong> (TU/e)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Supervision map</h3>
+          <ul>
+            <li><strong>Gerben Ouwersloot</strong> — Zumbul Atan</li>
+            <li><strong>Ling Li</strong> — Tom van Woensel · Layla Martin · Willem van Jaarsveld</li>
+            <li><strong>Casper Bazelmans</strong> — Tom van Woensel</li>
+            <li><strong>Neslihan Cevik</strong> — Tom van Woensel</li>
+            <li><strong>Miguel Chastre</strong> — Tom van Woensel · Christina Imdahl</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Integrated Logistics and Energy Lab</div>
+      <div class="small">Eindhoven University of Technology (TU/e)</div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
