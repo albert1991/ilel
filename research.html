@@ -1,25 +1,36 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Research — ILEL</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Research — Integrated Logistics and Energy Lab (ILEL)</title>
+  <meta name="description" content="Research lines, publications, and associated faculty — Integrated Logistics and Energy Lab (ILEL)." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <div class="topbar">
     <div class="topbar-inner">
       <div class="brand">
-        <div class="mark">IL</div>
+        <div class="mark" aria-label="ILEL mark">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="7" cy="17" r="2.25" fill="currentColor" opacity="0.95"/>
+            <circle cx="17" cy="7" r="2.25" fill="currentColor" opacity="0.95"/>
+            <path d="M8.7 15.3 L15.3 8.7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/>
+            <path d="M6 7 C8.5 5.2 11 5.2 13 6.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity="0.55"/>
+            <path d="M11 18 C13.3 19.2 15.8 19.0 18 17.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity="0.55"/>
+          </svg>
+        </div>
         <div>
           <div class="brand-title">Integrated Logistics and Energy Lab</div>
-          <div class="brand-sub">Optimization, AI, and decision-making</div>
+          <div class="brand-sub">Optimization, AI, and decision-making at the logistics–energy interface</div>
         </div>
       </div>
+
       <nav>
         <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
+        <a href="research.html" aria-current="page">Research</a>
         <a href="projects.html">Projects</a>
         <a href="people.html">People</a>
         <a href="contact.html">Contact</a>
@@ -31,38 +42,70 @@
     <section class="hero">
       <h1>Research</h1>
       <p class="tagline">
-        Our research focuses on optimization and AI for logistics systems operating
-        under energy, sustainability, and infrastructure constraints.
+        Our work combines operations research and AI to support decision-making for logistics systems constrained by
+        energy infrastructure, sustainability targets, and uncertainty.
       </p>
+      <div class="chips" aria-label="Key themes">
+        <div class="chip">Stochastic optimization</div>
+        <div class="chip">MDPs & RL</div>
+        <div class="chip">Electric & hydrogen freight</div>
+        <div class="chip">Grid/charging constraints</div>
+      </div>
     </section>
 
     <section class="section">
+      <h2>Research lines</h2>
       <div class="grid cols-3">
         <div class="card">
-          <h3>Energy-Responsive Logistics Systems</h3>
-          <p>
-            Routing, planning, and control of logistics operations under grid congestion,
-            charging constraints, and coupled logistics–energy decisions.
-          </p>
+          <h3>Energy-responsive logistics</h3>
+          <ul>
+            <li>Battery-electric truck routing under grid congestion</li>
+            <li>Charging infrastructure planning and control</li>
+            <li>Integrated logistics–energy planning</li>
+            <li>Hydrogen transport and distribution networks</li>
+          </ul>
         </div>
 
         <div class="card">
-          <h3>Sustainable Transport Management</h3>
-          <p>
-            Electric and hydrogen vehicle routing, robust transport planning,
-            asset utilization, and real-time operational control.
-          </p>
+          <h3>Sustainable transport management</h3>
+          <ul>
+            <li>Electric and hydrogen vehicle routing</li>
+            <li>Reducing empty mileage & improving utilization</li>
+            <li>Robust and stochastic transport planning</li>
+            <li>Real-time transport control</li>
+          </ul>
         </div>
 
         <div class="card">
-          <h3>Stochastic Optimization & AI</h3>
-          <p>
-            Markov decision processes, multi-stage optimization, reinforcement learning,
-            and predict-then-optimize approaches with recourse.
-          </p>
+          <h3>Stochastic optimization & AI</h3>
+          <ul>
+            <li>Markov Decision Processes and reinforcement learning</li>
+            <li>Stochastic and multi-stage optimization</li>
+            <li>Predict-then-optimize and recourse models</li>
+            <li>Hybrid OR–ML heuristics</li>
+          </ul>
         </div>
       </div>
     </section>
-  </main>
-</body>
-</html>
+
+    <section class="section" id="publications">
+      <h2>Selected publications (with abstracts)</h2>
+      <p class="small">
+        Seeded from TU/e Research Portal pages (abstract text shown when available). We can expand this to your full list once you pick a source of truth (TU/e portal export, BibTeX, or a curated list).
+      </p>
+
+      <div class="pubs">
+        <article class="pub card">
+          <div class="pub-head">
+            <h3 class="pub-title">
+              <a href="https://research.tue.nl/en/publications/a-green-hydrogen-energy-system-optimal-control-strategies-for-int" target="_blank" rel="noopener">
+                A Green Hydrogen Energy System — Optimal control strategies for integrated hydrogen storage and power generation with wind energy
+              </a>
+            </h3>
+            <div class="pub-meta">Renewable and Sustainable Energy Reviews (2022)</div>
+            <div class="pub-tags">
+              <span class="pill">MDP</span><span class="pill">Hydrogen</span><span class="pill">Wind</span>
+            </div>
+          </div>
+          <p class="pub-abstract">
+            The intermittent nature of renewabl
